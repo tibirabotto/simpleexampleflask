@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, flash
 app = Flask(__name__)
 app.secret_key = "tibiraboto_1234567"
 
-@app.route('/hello')
+@app.route('/')
 def index():
     flash("what's your name?")
     return render_template("index.html")
